@@ -17,7 +17,7 @@ class PhonePerson():
 	def stdPhone(self):
 		"""
 		self.num is the phone number from the input file
-		num may and may not be standard
+		num may and may not be standardized.
 		set the self.stdNum as standardized as (999)000-1234
 		if not with area code standardized as 123-2345
 		"""
@@ -31,9 +31,12 @@ class PhonePerson():
 			self.stdNum = number[:3]+'-'+number[3:]
 
 	def setnumPerson(self):
+		#add the <key, value> as <phone, name> to the static parameter
+		#numPerson is the dict, number : name
 		PhonePerson.numPerson[self.stdNum].append(self.name)
 
 	def getNumPerson():
+		#the getter of the static variable numPerson
 		return PhonePerson.numPerson
 
 
@@ -43,20 +46,22 @@ if __name__ == '__main__':
 	dis = f.readlines();
 	f.close
 
-	res = []
-
+	#read the line of phone book
 	for i in dis:
+		#split the phonebook by the tab and new line, into the phone and name
 		content = re.split("[\t\n]", i)
 		phone = content[1]
 		name = content[0]
-		res.append(PhonePerson(phone, name))
-
-	for item in res:
-		item.stdPhone()
-		item.setnumPerson()
-
+		#generate the object contact of PhonePerson
+		contact = PhonePerson(phone, name)
+		#standize phone number
+		contact.stdPhone()
+		#add each contact to the static variable numPerson of PhonePerson
+		contact.setnumPerson()
+	#get the static variable of numPerson of PhonePerson
 	Phonelist = PhonePerson.getNumPerson()
 
+	#write the <phone, name> into an output file 
 	with open(sys.argv[2], 'w') as file:
 		for phone, name in Phonelist.items():
 			file.write(phone+'\t'+','.join(name)+'\n')
