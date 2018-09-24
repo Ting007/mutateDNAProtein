@@ -1,4 +1,6 @@
-To run the project with Python 3.0:
+This program is to print out the sequence of mutated protein on the terminal.
+
+To run the project with Python 3.0, run the command on your terminal.
 python mutate.py ADAgene.fasta ADAprotein.fasta 239 129 G
 
 -ADAgene.fasta is the file of the gene of ADA
@@ -7,15 +9,15 @@ python mutate.py ADAgene.fasta ADAprotein.fasta 239 129 G
 -129 is the initial star codon CDS
 -G is the mutation of the DNA at opsition 239
 
-To test the program:
+To test the program, under other circumstances:
 
-Case1 (NM_000022.2(ADA):c.22G>A (p.Asp8Asn)):
+Case1 (NM_000022.2(ADA):c.22G>A (p.Asp8Asn)), run the command on your terminal
 python mutate.py ADAgene.fasta ADAprotein.fasta 22 129 A
 
-Case2 (NM_000022.2(ADA):c.239A>G (p.Lys80AGA):
+Case2 (NM_000022.2(ADA):c.239A>G (p.Lys80AGA), run the command on your terminal
 python mutate.py ADAgene.fasta ADAprotein.fasta 239 129 G
 
-Case3 (NM_001146725.1(Bombyx mori cytochrome P450): c.30T>A(p.Ile10Met) ATT > ATG): 
+Case3 (NM_001146725.1(Bombyx mori cytochrome P450): c.30T>A(p.Ile10Met) ATT > ATG), run your command on your terminal 
 python mutate.py P450gene.fasta P450protein.fasta 30 35 G 
 
 reference:
