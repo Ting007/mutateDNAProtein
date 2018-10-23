@@ -25,9 +25,9 @@ To test the program, under other circumstances:
 python mutate.py P450gene.fasta P450protein.fasta 30 35 G 
 ```
 
-reference:
-https://www.ncbi.nlm.nih.gov/clinvar/variation/1973/
-https://www.ncbi.nlm.nih.gov/nuccore/NM_001146725.1
+reference:<br>
+https://www.ncbi.nlm.nih.gov/clinvar/variation/1973/<br>
+https://www.ncbi.nlm.nih.gov/nuccore/NM_001146725.1<br>
 
 ### example of mutating DNA and its Protein sequence
 #### Given gene ADA (RefSeq NM_000022.2), forward translate the DNA substitution mutation c.239A>G to the expected amino acid change and codon position.
