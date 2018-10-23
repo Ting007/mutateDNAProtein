@@ -26,7 +26,7 @@ reference:
 https://www.ncbi.nlm.nih.gov/clinvar/variation/1973/
 https://www.ncbi.nlm.nih.gov/nuccore/NM_001146725.1
 
-### example of what the program is mutating DNA and its Protein sequence
+### example of mutating DNA and its Protein sequence
 #### Given gene ADA (RefSeq NM_000022.2), forward translate the DNA substitution mutation c.239A>G to the expected amino acid change and codon position.
 #### c.239A>G denotes that at nucleotide 239 an A is changed to a G. Nucleotide 1 is the A of the ATG-translation initiation codon.
 
