@@ -15,13 +15,15 @@ python mutate.py ADAgene.fasta ADAprotein.fasta 239 129 G<br>
 To test the program, under other circumstances:
 
 #### Case1 (NM_000022.2(ADA):c.22G>A (p.Asp8Asn)), run the command on your terminal
-### python mutate.py ADAgene.fasta ADAprotein.fasta 22 129 A
+```python mutate.py ADAgene.fasta ADAprotein.fasta 22 129 A```
 
 #### Case2 (NM_000022.2(ADA):c.239A>G (p.Lys80AGA), run the command on your terminal
-### python mutate.py ADAgene.fasta ADAprotein.fasta 239 129 G
+```python mutate.py ADAgene.fasta ADAprotein.fasta 239 129 G```
 
 #### Case3 (NM_001146725.1(Bombyx mori cytochrome P450): c.30T>A(p.Ile10Met) ATT > ATG), run your command on your terminal 
-### python mutate.py P450gene.fasta P450protein.fasta 30 35 G 
+```
+python mutate.py P450gene.fasta P450protein.fasta 30 35 G 
+```
 
 reference:
 https://www.ncbi.nlm.nih.gov/clinvar/variation/1973/
