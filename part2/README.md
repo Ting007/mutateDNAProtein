@@ -3,14 +3,14 @@
 ### This program is to print out the sequence of mutated protein on the terminal.
 
 #### To run the project with Python 3.0, run the command on your terminal.
-,,,
-python mutate.py ADAgene.fasta ADAprotein.fasta 239 129 G
-,,,
--ADAgene.fasta is the file of the gene of ADA
--ADAprotein.fasta is the file of the protein sequence of ADA
--239 is the position for mutation counting from the start codon.
--129 is the initial star codon CDS
--G is the mutation of the DNA at opsition 239
+```
+python mutate.py ADAgene.fasta ADAprotein.fasta 239 129 G<br>
+```
+-ADAgene.fasta is the file of the gene of ADA <br>
+-ADAprotein.fasta is the file of the protein sequence of ADA<br>
+-239 is the position for mutation counting from the start codon.<br>
+-129 is the initial star codon CDS<br>
+-G is the mutation of the DNA at opsition 239<br>
 
 To test the program, under other circumstances:
 
